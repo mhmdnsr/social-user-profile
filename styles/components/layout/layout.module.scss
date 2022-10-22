@@ -17,6 +17,7 @@
     width: 100%;
     display: block;
     position: fixed;
+    z-index: 999;
     @media (min-width: 769px) {
       display: none;
     }
