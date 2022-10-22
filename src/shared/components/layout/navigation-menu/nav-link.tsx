@@ -44,4 +44,6 @@ const NavLink: NextComponentType<NextPageContext, unknown, INavLinkProps> = Reac
     );
 });
 
+NavLink.displayName = 'NavLink';
+
 export default NavLink;
