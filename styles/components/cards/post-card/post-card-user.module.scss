@@ -1,0 +1,27 @@
+@import "styles/shared/theme";
+
+.post_card_user {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  cursor: pointer;
+
+  &__avatar {
+
+  }
+
+  &__info {
+    min-width: 0;
+    max-width: calc(100% - 50px);
+    p{
+      font-size: $font-size-base - 2;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

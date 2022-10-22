@@ -1,0 +1,29 @@
+@import "styles/shared/theme";
+
+.header {
+  width: 100%;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $background-color;
+  box-shadow: 0 9px 7px -7px rgb(0 0 0 / 12%);
+
+  &__logo {
+
+  }
+
+  &__menu {
+    &_button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_icon {
+      font-size: $font-size-base + 6;
+      width: $font-size-base + 6;
+      height: $font-size-base + 6;
+    }
+  }
+}

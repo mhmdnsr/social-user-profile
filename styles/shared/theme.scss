@@ -1,0 +1,24 @@
+$primary-color: #A177F7;
+$link-color: #A177F7;
+$font-size-base: 14px;
+$font-size-lg: $font-size-base + 2px;
+$font-size-sm: 12px;
+$heading-1-size: ceil($font-size-base * 2.71);
+$heading-2-size: ceil($font-size-base * 2.14);
+$heading-3-size: ceil($font-size-base * 1.71);
+$heading-4-size: ceil($font-size-base * 1.42);
+$heading-5-size: ceil($font-size-base * 1.14);
+$heading-color: rgba(0, 0, 0, 0.85);
+$text-color: rgba(0, 0, 0, 0.65);
+$text-color-secondary: rgba(0, 0, 0, 0.45);
+$disabled-color: rgba(0, 0, 0, 0.25);
+$border-radius-base: 2px;
+$border-color-base: #d9d9d9;
+$box-shadow-base: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+0 9px 28px 8px rgba(0, 0, 0, 0.05);
+$background-color: #fff;
+$main-background-color: #F5F8FD;
+
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}

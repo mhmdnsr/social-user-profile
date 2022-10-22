@@ -1,0 +1,46 @@
+@import "styles/shared/theme";
+
+.user_account {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+
+  &__avatar {
+    background-color: $primary-color;
+
+    &_container {
+      width: 50px;
+    }
+  }
+
+  &__info {
+    &_container {
+      width: calc(100% - 50px);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    &_name {
+      width: 100%;
+      font-size: $heading-4-size - 5;
+      color: $text-color;
+      font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &_email {
+      width: 100%;
+      font-size: $font-size-base;
+      color: $disabled-color;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

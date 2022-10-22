@@ -1,0 +1,50 @@
+@import "styles/shared/theme";
+
+.layout {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: $main-background-color;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  &__header {
+    width: 100%;
+    display: block;
+    position: fixed;
+    @media (min-width: 769px) {
+      display: none;
+    }
+  }
+
+  &__side_bar {
+    width: 100%;
+    max-width: 275px;
+    display: block;
+    height: 100%;
+    max-height: 100vh;
+    position: relative;
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+    &_wrapper {
+      width: 100%;
+      max-width: 275px;
+      height: 100%;
+      position: fixed;
+    }
+  }
+
+  &__main {
+    width: calc(100% - 275px);
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}

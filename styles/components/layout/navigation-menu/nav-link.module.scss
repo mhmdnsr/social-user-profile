@@ -1,0 +1,50 @@
+@import "styles/shared/theme";
+
+.nav_link {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 0 30px;
+
+  &:hover, &_active {
+    box-shadow: 0 9px 7px -7px rgb(0 0 0 / 12%);
+    text-decoration: none;
+    .nav_link {
+      &__icon_container {
+        svg {
+          fill: $primary-color;
+        }
+      }
+
+      &__text_container {
+        p {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  &__icon_container {
+    width: 20px;
+    height: 20px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: $disabled-color;
+    }
+  }
+
+  &__text_container {
+    p {
+      margin: 0;
+      color: $disabled-color;
+      font-size: $font-size-base;
+      font-weight: 500;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import "styles/shared/theme";
+
+.user_account_wrapper {
+  width: 100%;
+
+  &__collapse {
+    width: 100%;
+
+    .ant-collapse-item {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &_panel {
+      width: 100%;
+
+      &_header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h5 {
+          font-size: $heading-5-size;
+          font-weight: 500;
+        }
+      }
+    }
+
+    &_icon {
+      transition: rotate ease-in-out 0.5s;
+      font-size: $font-size-base + 4;
+      font-weight: 500;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import "styles/shared/theme";
+
+// Override Ant Design Theme
+html{
+  --ant-primary-color: #{$primary-color};
+  --ant-primary-color-hover: #{tint($primary-color, 50%)};
+  --ant-primary-color-active: #{tint($primary-color, 70%)};
+  --ant-primary-color-outline: rgba($primary-color, 0.2);
+  --ant-primary-1: #{tint($primary-color, 10%)};
+  --ant-primary-2: #{tint($primary-color, 20%)};
+  --ant-primary-3: #{tint($primary-color, 30%)};
+  --ant-primary-4: #{tint($primary-color, 40%)};
+  --ant-primary-5: #{tint($primary-color, 50%)};
+  --ant-primary-6: #{tint($primary-color, 60%)};
+  --ant-primary-7: #{tint($primary-color, 70%)};
+  --ant-primary-8: #{tint($primary-color, 80%)};
+  --ant-primary-9: #{tint($primary-color, 90%)};
+  --ant-primary-10: #{tint($primary-color, 100%)};
+}

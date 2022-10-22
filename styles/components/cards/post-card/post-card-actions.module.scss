@@ -1,0 +1,38 @@
+@import "styles/shared/theme";
+
+.post_card_actions {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  &__action {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+
+    &_colored {
+      .post_card_actions__action_icon{
+        color: #EC6377;
+      }
+      .post_card_actions__action_count{
+        color: #EC6377;
+      }
+    }
+
+    &_icon {
+      font-size: $font-size-lg + 5;
+      width: $font-size-lg + 5;
+      height: $font-size-lg + 5;
+      color: $disabled-color;
+    }
+
+    &_count {
+      font-size: $font-size-base - 2;
+      font-weight: 400;
+      color: $disabled-color;
+    }
+  }
+}

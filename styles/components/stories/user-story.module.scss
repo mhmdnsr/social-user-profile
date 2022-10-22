@@ -1,0 +1,55 @@
+@import "styles/shared/theme";
+
+.user_story {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  position: relative;
+
+  &__outer_view {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $primary-color;
+
+    &_seen {
+      border: 2px solid $disabled-color;
+    }
+  }
+
+  &__avatar {
+    &_overlay {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: rgba($primary-color, 0.7);
+      position: absolute;
+      z-index: 99;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &_icon {
+        font-size: $font-size-base + 6;
+        width: $font-size-base + 6;
+        height: $font-size-base + 6;
+        color: $background-color;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__info {
+    p{
+      font-size: $font-size-base;
+      font-weight: 500;
+    }
+  }
+}

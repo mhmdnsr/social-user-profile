@@ -1,0 +1,22 @@
+// Ant Design
+@import "~antd/dist/antd.variable.min.css";
+
+// App Styles
+@import "./shared/ant-theme";
+@import "shared/settings";
+@import "./components/layout/user-account/user-account-ant-components-override";
+@import "./components/layout/header/header-wrapper-ant-components-override";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0
+}

@@ -1,0 +1,16 @@
+.stories {
+  width: 100%;
+
+  &__carousel{
+    width: 100%;
+    overflow: hidden;
+    &_container{
+      display: flex;
+      gap: 20px;
+    }
+
+    &_slide{
+      flex: 0 0 65px;
+    }
+  }
+}

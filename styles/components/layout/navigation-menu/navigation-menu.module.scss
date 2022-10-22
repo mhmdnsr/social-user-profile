@@ -1,0 +1,26 @@
+@import "styles/shared/theme";
+
+.navigation_menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  &__title {
+    font-size: $heading-4-size - 3px;
+    font-weight: 500;
+    color: $heading-color;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__menu_items{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
