@@ -20,34 +20,33 @@ The project is a React + NextJs application that shows a social user page and us
 ### Project Structure
 
 qeema-sr-frontend-task/  
-├── pages/  
-│   ├── api/  
-│   │   └── Demo Json Apis  
-│   ├── _app.ts  
-│   └── Pages Routes  
-├── public/  
-│   └── Public Files  
-├── src/  
-│   ├── modules/  
-│   │   └── Application Pages  
-│   └── shared/  
-│       ├── components/  
-│       │   └── Set of Components to us in the application  
-│       └── services/  
-│       │   └── Set of services to provide logic to the application  
-│       └── interfaces/  
-│       |    └── Set of interfaces to provide types to the application  
-│       └── hooks/  
-│       |   └── Set of hooks to provide logic to the application  
-│       └── redux/  
-│           └── Set of redux tools to provide state management to the application  
-|        
-└── styles/  
-├── ├── components/  
-├── │   └── Components Styles  
-├── ├── pages/  
-├── │   └── Pages Styles  
-├── ├── shared/  
-├── │   └── Shared Styles  
-└── └── global.scss  
+-  pages/
+    - api/  
+       └── Demo Json Apis
+    - _app.ts  
+    - Pages Routes  
+    - public/  
+       └── Public Files  
+- src/  
+    - modules/  
+       └── Application Pages  
+    - shared/  
+        - components/  
+           └── Set of Components to us in the application  
+        - services/  
+           └── Set of services to provide logic to the application  
+        - interfaces/  
+           └── Set of interfaces to provide types to the application  
+        - hooks/  
+           └── Set of hooks to provide logic to the application  
+        - redux/  
+           └── Set of redux tools to provide state management to the application   
+- styles/  
+    - components/  
+       └── Components Styles  
+    - pages/  
+       └── Pages Styles  
+    - shared/  
+       └── Shared Styles  
+    - global.scss  
  
